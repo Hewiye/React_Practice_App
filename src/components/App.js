@@ -43,12 +43,11 @@ const LOCAL_STORAGE_KEY = "contacts"; // just variable
    <div className='ui container'>
      <Router>
         <Header></Header>
-        <Route path = "/add" component = {AddContact}></Route>
+        <Route path = "/addd" component = {AddContact}></Route>
         <Route path = "/" component = {ContactList}></Route>
        <AddContact addContactHandler = {addContactHandler}></AddContact>
        <ContactList contacts ={contacts}  getContactId={removeContactHandler}></ContactList>  
      </Router>
-     
    </div>
   );
 }
